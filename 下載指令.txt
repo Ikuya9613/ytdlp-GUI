@@ -1,0 +1,7 @@
+下載指令，將youtube music連結替換[url]：
+
+yt-dlp --output "%(title)s.%(ext)s" --embed-thumbnail --add-metadata --merge-output-format mp4 --extract-audio --audio-format m4a "[url]"
+
+yt-dlp -x --audio-format m4a --embed-metadata --embed-thumbnail -P ".\downloads" -o "%(title)s.%(ext)s" "你的YouTube網址"
+
+yt-dlp -x --audio-format m4a --embed-metadata --embed-thumbnail -P ".\downloads" -o "%(title)s.%(ext)s" --cookies "cookies.txt" "你的YouTube網址"
